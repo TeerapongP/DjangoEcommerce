@@ -1,0 +1,923 @@
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สะดุดรักยัยแฟนเช่า</title>
+    <link rel="stylesheet" href="{% static 'css/product6.css'%}">
+</head>
+<body>  
+    {% include "navbar.html" %}
+        <input class="btn-buy" type="button" value="Quick Buy" >
+        <div class="parent">
+            <img class="showimge-product" src="{% static 'images/สะดุด/1.jpg'%}" alt="">
+        </div>
+        {%for product in products%}
+        <div class="popup" id="popup-1">
+            <div class="overlay">
+                <div class="content">
+                    <div class="text-product">
+                        <p>MANGA</p>
+                        <p2>MANGA</p2>
+                        <p3>MANGA</p3>
+                        <p4>MANGA</p4>
+                        <p5>MANGA</p5>
+                        <p6>MANGA</p6>
+                        <p7>MANGA</p7>
+                        <p8>MANGA</p8>
+                        <p9>MANGA</p9>
+                        <p10>MANGA</p10>
+                        <p11>MANGA</p11>
+                        <p12>MANGA</p12>
+                        <p13>MANGA</p13>
+                        <p14>MANGA</p14>
+                        <p15>MANGA</p15>
+                        <p16>MANGA</p16>
+                        <p17>MANGA</p17>
+                        <p18>MANGA</p18>
+                        <p19>MANGA</p19>
+                        <p20>MANGA</p20>
+                        <p21>MANGA</p21>
+
+                    </div>
+                    <div class="text-product-name">
+                        <p>{{product.name}} 1</p>
+                        <p2>{{product.name}} 2</p2>
+                        <p3>{{product.name}} 3</p3>
+                        <p4>{{product.name}} 4</p4>
+                        <p5>{{product.name}} 5</p5>
+                        <p6>{{product.name}} 6</p6>
+                        <p7>{{product.name}} 7</p7>
+                        <p8>{{product.name}} 8</p8>
+                        <p9>{{product.name}} 9</p9>
+                        <p10>{{product.name}} 10</p10>
+                        <p11>{{product.name}} 11</p11>
+                        <p12>{{product.name}} 12</p12>
+                        <p13>{{product.name}} 13</p13>
+                        <p14>{{product.name}} 14</p14>
+                        <p15>{{product.name}} 15</p15>
+                        <p16>{{product.name}} 16</p16>
+                        <p17>{{product.name}} 17</p17>
+                        <p18>{{product.name}} 18</p18>
+                        <p19>{{product.name}} 19</p19>
+                        <p20>{{product.name}} 20</p20>
+                        <p21>{{product.name}} 21</p21>
+                    </div>
+                    <img class="img-quic-buy1" src="{% static 'images/สะดุด/1.jpg'%}" alt="">
+                    <img class="img-quic-buy2" src="{% static 'images/สะดุด/2.jpg'%}" alt="">
+                    <img class="img-quic-buy3" src="{% static 'images/สะดุด/3.jpg'%}" alt="">
+                    <img class="img-quic-buy4" src="{% static 'images/สะดุด/4.jpg'%}" alt="">
+                    <img class="img-quic-buy5" src="{% static 'images/สะดุด/5.jpg'%}" alt="">
+                    <img class="img-quic-buy6" src="{% static 'images/สะดุด/6.jpg'%}" alt="">
+                    <img class="img-quic-buy7" src="{% static 'images/สะดุด/7.jpg'%}" alt="">
+                    <img class="img-quic-buy8" src="{% static 'images/สะดุด/8.jpg'%}" alt="">
+                    <img class="img-quic-buy9" src="{% static 'images/สะดุด/9.jpg'%}" alt="">
+                    <img class="img-quic-buy10" src="{% static 'images/สะดุด/10.jpg'%}" alt="">
+                    <img class="img-quic-buy11" src="{% static 'images/สะดุด/11.jpg'%}" alt="">
+                    <img class="img-quic-buy12" src="{% static 'images/สะดุด/12.jpg'%}" alt="">
+                    <img class="img-quic-buy13" src="{% static 'images/สะดุด/13.jpg'%}" alt="">
+                    <img class="img-quic-buy14" src="{% static 'images/สะดุด/14.jpg'%}" alt="">
+                    <img class="img-quic-buy15" src="{% static 'images/สะดุด/15.jpg'%}" alt="">
+                    <img class="img-quic-buy16" src="{% static 'images/สะดุด/16.jpg'%}" alt="">
+                    <img class="img-quic-buy17" src="{% static 'images/สะดุด/17.jpg'%}" alt="">
+                    <img class="img-quic-buy18" src="{% static 'images/สะดุด/18.jpg'%}" alt="">
+                    <img class="img-quic-buy19" src="{% static 'images/สะดุด/19.jpg'%}" alt="">
+                    <img class="img-quic-buy20" src="{% static 'images/สะดุด/20.jpg'%}" alt="">
+                    <img class="img-quic-buy21" src="{% static 'images/สะดุด/21.jpg'%}" alt="">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>  
+                    <input class="add-to-cart" type="button" value="ADD TO CART"> 
+                    <div class="over-fit"></div>
+                    <div class="btn-price">
+                        <button class="btn-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn2-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn3-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn4-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn5-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn6-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn7-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn8-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn9-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn10-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn11-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn12-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn13-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn14-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn15-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn16-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn17-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn18-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn19-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn20-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn21-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn2-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn3-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn4-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn5-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn6-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn7-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn8-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn9-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn10-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn11-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn12-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn13-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn14-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn15-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn16-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn17-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn18-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn19-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn20-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn21-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input class="btn-buy" type="button" value="Quick Buy" onclick="togglePopup()">
+        <div class="present-procuct">
+            <h1>{{product.name}}</h1>
+            <h2>สินค้าที่เกี่ยวข้อง</h2>
+            <p1>เรื่องย่อ</p1>
+            <p2>
+                แค่การเช่าในครั้งเดียวก็มีเรียลเปล่งประกายออกมา คิโนะชิตะ คาสึยะ (20)<br>
+                นักศึกษาไม่ได้เรื่อง ผู้อาศัยอยู่ในโตเกียว ชีวิตของเขาเริ่มเปลี่ยนไปอย่างน่าตกใจ
+                <br>ตั้งแต่ได้พบกับสาวสวย 'ปริศนา'ที่ชื่อมิสึฮาระ จิซึรุ—!?
+            </p2>
+            <p3>ข้อมูลหนังสือ</p3>
+            <p4>
+                เรื่อง : Reiji Miyajima <br>
+                ภาพ : Reiji Miyajima <br>
+                สำนักพิมพ์ : Luckinter<br>
+                Genres : ตลกเฮฮา ,  ดราม่า ,  โรแมนติก  
+            </p4>
+            <div class="border-line"></div>
+            <div class="border-line-product">
+                <div class="border-line-product1">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/1.jpg'%}" alt="" srcset="">
+                    </div>
+                 
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 1 </p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product2">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/2.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 2</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product3">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/3.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 3</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product4">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/4.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 4</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product5">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/5.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 5</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product6">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/6.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 6</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product7">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/7.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 7</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product8">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/8.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 8</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product9">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/9.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 9</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product10">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/10.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 10</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product11">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/11.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 11</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product12">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/12.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 12</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product13">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/13.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 13</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product14">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/14.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 14</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product15">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/15.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 15</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product16">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/16.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 16</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-line-product17">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/17.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 17</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-line-product18">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/18.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 18</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="border-line-product19">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/19.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 19</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product20">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/20.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 20</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product21">
+                    <div class="img-product">
+                        <img src="{% static 'images/สะดุด/21.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 21</p1>
+                        <p2> Tsubasa Yamaguchi </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="{% static 'js/products.js' %}"></script>
+    {%endfor%}
+</html>

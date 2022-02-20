@@ -1,0 +1,132 @@
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCKINTER</title>
+    <link rel="stylesheet" href="{% static 'css/index.css'%}">
+    
+    
+</head>
+<body >
+    <section>
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+        <img  class="myslider-face1" src="{% static 'images/assets/cover_1.jpg'%}" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+        <img class="myslider-face1" src="{% static 'images/assets/cover_2.jpg'%}" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+        <img class="myslider-face1" src="{% static 'images/assets/cover_3.jpg'%}" style="width:100%">
+        </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+        <div class="parent">
+            <img class="logo1" src="{% static 'images/assets/logo.png'%}">
+        </div>
+        <div class="text-store">
+            <h1>L U C K I N T E R</h1>
+            <h5>PUBLISHING CO, LTD.</h5>
+            <a href="{% url 'login' %}">
+            <input class="login-btn" type="button" value="Login"></a>
+            <img class="cart-pricess" src="{% static 'images/assets/shopping-cart.png'%}" alt="">
+        </div>
+        <div class="line-under-text"></div>
+        <div class="border-radius">
+            <h5></h5>
+            <div class="text-store-bar">
+                <h1>>LUCKINTER<</h1>
+                <h2>SHOP</h2>
+                <a href="{% url 'series' %}">
+                <h3>SERIES</h3>
+                </a>
+                <h4>REWARDS</h4>
+                <h5>FAQ</h5>
+                <a href="{% url 'contact' %}">
+                <h6>CONTACT US</h6>
+                </a>
+            </div>
+        </div>
+        <div class="series-text">
+            <h1>Series</h1>
+            <h2>ดูทั้งหมด ></h2>
+        </div>
+        <div class="images-series-top">
+            <a href="{% url 'product1' %}">
+            <img class="images-series1" src="{% static 'images/เจ้าสาว/goto.jpg' %}" alt=""></a>
+            <a href="{% url 'product2' %}">
+                <img class="images-series2" src="{% static 'images/โฉมงาน/Komi-san wa.png' %}" alt=""></a>
+                <a href="{% url 'product3' %}">
+                <img class="images-series3" src="{% static 'images/Spy/spy.png' %}" alt=""></a>
+                <a href="{% url 'product4' %}">
+                <img class="images-series4" src="{% static 'images/ภรรยา/1.jpg'%}" alt=""></a>
+                <a href="{% url 'product5' %}">
+                <img class="images-series5" src="{% static 'images/blue/Blue-Period-Key-Visual-1.jpg'%}" alt=""></a>
+            </div>
+            <div class="images-series-mid">
+                <a href="{% url 'product6' %}">
+                <img class="images-series-mid1" src="{% static 'images/สะดุด/1583735524.jpg'%}" alt=""></a>
+                <a href="{% url 'product7' %}">
+                <img class="images-series-mid2" src="{% static 'images/สไลม์/slime_s2_part2_tn_bg-e51bdc8c8c7c-1633679294251-dbcKQ6wv.jpg' %}" alt=""></a>
+                <a href="{% url 'product8' %}">
+                <img class="images-series-mid3" src="{% static 'images/bluelock/1.jpg'%}" alt=""></a>
+                <a href="{% url 'product9' %}">
+                <img class="images-series-mid4" src="{% static 'images/หนุ่มเย็บผ้า/cover.jpg'%}" alt=""></a>
+                <a href="{% url 'product10' %}">
+                <img class="images-series-mid5" src="{% static 'images/Tokyo/otekiiyw-erewnecch-rs-aekngmancchi-wx-ll-pepexr-3554x1999_53.jpg'%}" alt=""></a>
+        </div>
+        <div class="text-series-top">
+            <h1>เจ้าสาวผมเป็นแฝดห้า</h1>
+            <h2>โฉมงามพูดไม่เก่งกับผองเพื่อนไม่เต็มเต็ง</h2>
+            <h3>สปาย x แฟมิลี่</h3>
+            <h4>จะยังไงภรรยาผมก็น่ารัก</h4>
+            <h5>Blue period</h5>
+        </div>
+        <div class="text-series-mid">
+            <h6>สะดุดรักยัยแฟนเช่า</h6>
+            <h7>เกิดใหม่ทั้งทีก็เป็นสไลม์ไปซะแล้ว</h7>
+            <h8>แข้งดวลแข้ง</h8>
+            <h9>หนุ่มเย็บผ้ากับสาวนักคอสเพลย์</h9>
+            <h10>โตเกียวรีเวนเจอร์</h10>
+        </div>
+        <div class="box-publishing">
+            <div class="parent">
+                <img class="logo-box-publishing" src="{% static 'images/assets/logo.png'%}">
+            </div>
+            <div class="text-box-publishing">
+                <h1>Luckinter Publishing</h1>
+               
+            </div>
+            <div class="box-offcial">
+                <h1></h1>
+                <h2>OFFCIAL STORE</h2>
+                
+            </div>
+            
+        </div>
+        <div class="top-new">
+            <h1>ข่าวสารจากสำนักพิมพ์</h1>
+            <div class="border-top-new">
+            </div>
+            <div class="border-top-line"></div>
+            <div class="text-top-new">
+                <h1>16/01/2022</h1>
+                <h2>18/01/2022</h2>
+            </div>
+            <div class="border-text-top-new">
+                <h1></h1>
+                <h2>New</h2>
+                <h3></h3>
+                <h4>New</h4>
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'js/indext.js' %}"></script>
+</body>

@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+
+    
+}
+.logo1{
+
+    border-radius: 50%;
+    position: absolute;
+    width: 89px;
+    height: 89px;
+    left: 100px;
+    top: 11px;
+    object-fit: cover;
+
+}
+.text-store h2{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 1772px;
+    top: 17px;
+
+    background: #F2711C;
+    border-radius: 2px;
+}
+.cart-pricess{
+    position: absolute;
+    width: 51px;
+    height: 35px;
+    left: 1721px;
+    top: 32px;
+    object-fit: contain;
+}
+.login-btn{
+    position: absolute;
+    width: 78px;
+    height: 38px;
+    top:31px;
+    left: 1633px;
+    border: 1px solid #F1F3F4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+/* All Text */
+.text-store h1{
+    position: absolute;
+    width: 190px;
+    height: 30px;
+    left: 201px;
+    top: 17px;
+
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.line-under-text {
+    position: absolute;
+    width: 163px;
+    height: 0px;
+    left: 206px;
+    top: 65px;
+    
+    border: 1px solid #000000;
+
+}
+.text-store h5{
+    position: absolute;
+    width: 148px;
+    height: 14px;
+    left: 220px;
+    top: 53px;
+
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.border-radius h5{
+    position: absolute;
+    width: 1920px;
+    height: 45px;
+    left: 0px;
+    top: 93px;
+
+    background: #F0F2F4;
+}
+.text-store-bar h1{
+    position: absolute;
+    width: 280px;
+    height: 36px;
+    left: 231px;
+    top: 105px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+.text-store-bar h2{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 369px;
+    top: 105px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h3{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 451px;
+    top: 101px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h4{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 1363px;
+    top: 98px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h5{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 1491px;
+    top: 91px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+} 
+.text-store-bar h6{
+    position: absolute;
+    width: 110px;
+    height: 44px;
+    left: 1559px;
+    top: 76px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+} 
+.border-text{
+    position: absolute;
+    width: 193px;
+    height: 39px;
+    left: 238px;
+    top: 170px;
+
+    border: 1px solid #C4C4C4;
+    border-radius: 3px;
+}
+.border-text1{
+    position: absolute;
+    width: 74px;
+    height: 40px;
+    left: 445px;
+    top: 170px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.border-text2{
+    position: absolute;
+    width: 120px;
+    height: 40px;
+    left: 517px;
+    top: 170px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+
+}
+.border-text3{
+    position: absolute;
+    width: 74px;
+    height: 40px;
+    left: 645px;
+    top: 170px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.border-text4{
+    position: absolute;
+    width: 74px;
+    height: 40px;
+    left: 719px;
+    top: 170px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.border-text p1{
+    position: absolute;
+    left: 14px;
+    top: 10px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #9A9A9A;
+}
+.border-text p2{
+    position: absolute;
+    left: 89px;
+    top: 10px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+}
+.border-text1 p{
+    position: absolute;
+    left: 10px;
+    top: -8px;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.border-text2 p{
+    position: absolute;
+    width: 90px;
+
+    left: 18px;
+    top: -8px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.border-text3 p{
+    position: absolute;
+    width: 60px;
+
+    left: 5px;
+    top: -8px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.border-text4 p{
+
+    position: absolute;
+    width: 60px;
+    left: 10px;
+    top: -9px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.box-anime-1{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 327px;
+    top: 247px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-2{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 327px;
+    top: 405px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-3{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 327px;
+    top: 563px;
+    
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-4{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 327px;
+    top: 721px;
+    
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-5{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 327px;
+    top: 879px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-6{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 682px;
+    top: 247px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-7{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 682px;
+    top: 405px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-8{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 682px;
+    top: 563px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-9{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 682px;
+    top: 721px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-10{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 682px;
+    top: 879px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-11{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1037px;
+    top: 247px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-12{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1037px;
+    top: 405px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-13{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1037px;
+    top: 563px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-14{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1037px;
+    top: 721px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-15{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1037px;
+    top: 879px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-16{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1392px;
+    top: 247px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-17{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1392px;
+    top: 405px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-18{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1392px;
+    top: 563px;
+    
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-anime-19{ 
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1392px;
+    top: 721px;
+    
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px; 
+}
+.box-anime-20{
+    position: absolute;
+    width: 310px;
+    height: 134px;
+    left: 1392px;
+    top: 879px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.img-anime {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+
+    left: 1px;
+    top: 12px;
+    object-fit: contain;
+}
+.box-anime h1{
+    position: absolute;
+    top: 10px;
+    left: 120px;
+
+    font-size: 14px;
+    line-height: 16px;
+}
+.box-anime p1{
+    position: absolute;
+    left: 119px;
+    top: 45px;
+
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #C4C4C4;
+}
+.box-anime p2{
+    position: absolute;
+    top: 104px;
+    left: 114px;
+    font-size: 14px;
+    line-height: 14px;
+
+    color: #007ED2;
+}
+.box-anime-5 p1{
+    position: absolute;
+    top: 60px;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C4C4C4;
+}
+.box-anime-9 p1{
+    position: absolute;
+    top: 60px;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C4C4C4;
+}
+.box-anime-11 p1{
+    position: absolute;
+    top: 50px;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C4C4C4;
+}
+.box-anime-15 p1{
+    position: absolute;
+    top: 80px;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C4C4C4;
+}
+.box-anime-20 p1{
+    position: absolute;
+    top: 60px;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #C4C4C4;
+}

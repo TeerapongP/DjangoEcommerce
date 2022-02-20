@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.heder-text h1{
+    position: absolute;
+    width: 447px;
+    height: 62px;
+    left: 441px;
+    top: 60px;
+
+    font-size: 48px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.heder-text p1{
+    position: absolute;
+    width: 340px;
+    height: 30px;
+    left: 445px;
+    top: 173px;
+
+    font-size: 18px;
+    line-height: 21px;
+}
+.heder-text p2{
+    position: absolute;
+    width: 150px;
+    height: 21px;
+    left: 795px;
+    top: 172px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #007ED2;
+}
+.heder-text p3{
+    position: absolute;
+    width: 516px;
+    height: 24px;
+    left: 445px;
+    top: 212px;
+}
+.heder-text p4{
+    position: absolute;
+    width: 150px;
+    height: 21px;
+    left: 920px;
+    top: 213px;
+
+    font-size: 18px;
+    line-height: 21px;
+    color: #007ED2;
+}
+.heder-text p5{
+    position: absolute;
+    width: 660px;
+    height: 24px;
+    left: 445px;
+    top: 250px;
+}
+.imge-phone{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 450px;
+    top: 290px;
+}
+.imge-contract p1{
+    position: absolute;
+    width: 107px;
+    height: 21px;
+    left: 500px;
+    top: 290px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.imge-email{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 450px;
+    top: 337px;
+}
+.imge-contract p2{
+    position: absolute;
+    width: 172px;
+    height: 28px;
+    left: 500px;
+    top: 337px;
+
+}
+.box-contract {
+    position: absolute;
+    width: 290px;
+    height: 130px;
+    left: 100px;
+    top: 127px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box-contract-line{
+    position: absolute;
+    width: 290px;
+    height: 0px;
+    top:192px;
+    left: 102px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.box-contract-line2{
+    position: absolute;
+    width: 290px;
+    height: 0px;
+    top:259px;
+    left: 102px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.box-contract h1{
+    position: absolute;
+
+    top: -5px;
+    left: 42px;
+    bottom: 22px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}
+.box-contract h2{
+    position: absolute;
+    top:65px;
+    left: 35px;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #000000;
+}

@@ -1,0 +1,1331 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+.logo1{
+    border-radius: 50%;
+    position: absolute;
+    width: 89px;
+    height: 89px;
+    left: 100px;
+    top: 11px;
+    object-fit: cover;
+
+}
+.text-store h2{
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 1772px;
+    top: 17px;
+
+    background: #F2711C;
+    border-radius: 2px;
+}
+.fa-shopping-cart{
+    position: absolute;
+    width: 51px;
+    height: 35px;
+    left: 1721px;
+    top: 32px;
+    object-fit: contain;
+}
+.login-btn{
+    position: absolute;
+    width: 78px;
+    height: 38px;
+    top:31px;
+    left: 1633px;
+    border: 1px solid #F1F3F4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+/* All Text */
+.text-store h1{
+    position: absolute;
+    width: 190px;
+    height: 30px;
+    left: 201px;
+    top: 17px;
+
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.line-under-text {
+    position: absolute;
+    width: 163px;
+    height: 0px;
+    left: 206px;
+    top: 65px;
+    
+    border: 1px solid #000000;
+
+}
+.text-store h5{
+    position: absolute;
+    width: 148px;
+    height: 14px;
+    left: 220px;
+    top: 53px;
+
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.border-radius h5{
+    position: absolute;
+    width: 1920px;
+    height: 45px;
+    left: 0px;
+    top: 93px;
+
+    background: #F0F2F4;
+}
+.text-store-bar h1{
+    position: absolute;
+    width: 280px;
+    height: 36px;
+    left: 231px;
+    top: 105px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+.text-store-bar h2{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 369px;
+    top: 105px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h3{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 451px;
+    top: 101px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h4{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 1363px;
+    top: 98px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-store-bar h5{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 1491px;
+    top: 91px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+} 
+.text-store-bar h6{
+    position: absolute;
+    width: 110px;
+    height: 44px;
+    left: 1559px;
+    top: 76px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.showimge-product{
+    position: absolute;
+    width: 153px;
+    height: 203px;
+    left: 282px;
+    top: 185px;
+    object-fit: contain;
+}
+.present-procuct h1{
+    position: absolute;
+    left: 494px;
+    top: 180px;
+
+
+    font-size: 28px;
+    line-height: 33px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #000000;
+}
+
+.present-procuct p1{
+    position: absolute;
+    left: 495px;
+    top: 220px;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+.present-procuct p2{
+    position: absolute;
+    left: 496px;
+    top: 245px;
+
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+}
+.present-procuct p3{
+    position: absolute;
+    left: 1165px;
+    top: 211px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.present-procuct p4{
+    position: absolute;
+    left: 1165px;
+    top: 240px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.border-line{
+    position: absolute;
+    width: 1740px;
+    height: 1px;
+    left: 90px;
+    top: 410px;
+    background: #C4C4C4;
+}
+
+.text-search p{
+    position: absolute;
+    left: 1390px;
+    top: 23px;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.search-item{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1357px;
+    top: 38px;
+    object-fit: contain;
+}
+.btn-buy{
+    position: absolute;
+    width: 112px;
+    height: 27px;
+
+    left: 1586px;
+    top: 419px;
+    
+    background-color: #007ED2;
+    border: none;
+    color: white;
+
+    font-size: 18px;
+    border-radius: 5px;
+}
+.present-procuct h2{
+
+    position: absolute;
+    width: 276px;
+    height: 28px;
+    top: 419px;
+    left: 250px;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+.border-line-product1{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product2{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product3{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 750px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.border-line-product4{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 1000px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product5{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 1250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product6{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top:480px;
+    left: 1500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product7{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product8{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product9{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 750px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product10{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 1000px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product11{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 1250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product12{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 915px;
+    left: 1500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product13{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 1360px;
+    left: 250px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.border-line-product14{
+    position: absolute;
+    width: 217px;
+    height: 412px;
+    top: 1360px;
+    left: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.img-product img{
+    position: absolute;
+    width: 159px;
+    height: 193px;
+    left: 30px;
+    top: 18px;
+    object-fit: contain;
+}
+
+.border-price{
+    position: absolute;
+    top:345px;
+    left: 24px;
+    width: 45px;
+    height: 24px;
+    background: #F15F22;
+    border-radius: 5px;
+}
+.border-price2{
+    position: absolute;
+    top:380px;
+    left: 24px;
+    width: 45px;
+    height: 24px;
+    background: #F15F22;
+    border-radius: 5px;
+}
+.text-border p{
+    position: absolute;
+    top:210px;
+    left: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    display: flex;
+
+
+    color: #00B5AD;
+}
+.text-border p1{
+    position: absolute;
+    width: 250px;
+    top:250px;
+    left: 25px;
+    font-size: 16px;
+
+    color: #000000;
+}
+.text-border p2{
+    position: absolute;
+    width: 176px;
+    top:270px;
+    left: 30px;
+    font-size: 18px;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.text-border p3{
+    position: absolute;
+    width: 176px;
+    top: 344px;
+    left: 158px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.text-border p4{
+    position: absolute;
+    width: 176px;
+    top:380px;
+    left: 168px;
+    font-size: 18px;
+
+    color: #000000;
+}
+.border-price-text p{
+    position: absolute;
+    top: -19px;
+    left: 3px;
+    color: white;
+    font-size: 18px;
+}
+.border-price-text p1{
+    position: absolute;
+    top: 1px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+}
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,0,0.7);
+    z-index: 1;    
+    display: none;
+    overflow-y: scroll;
+    
+}
+.popup .content{
+    position: relative;
+    top: 480px;
+    left: 950px;
+    width: 721px;
+    height: 774px;
+    transform: translate(-50%,-50%);
+    background: #FFFFFF;
+    border-radius: 20px;
+    overflow-y: scroll;
+    
+}
+.popup .close-btn{
+    cursor:pointer ;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    color:black;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;   
+}
+
+.popup.active .overlay{
+    display: block;
+    overflow-y: scroll;
+}
+.content .img-quic-buy1{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 25px;
+}
+.content .img-quic-buy2{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 140px;
+}
+.content .img-quic-buy3{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 255px;
+}
+.content .img-quic-buy4{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 370px;
+}
+.content .img-quic-buy5{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 485px;
+}
+.content .img-quic-buy6{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 600px;
+}
+.content .img-quic-buy7{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 715px;
+}
+.content .img-quic-buy8{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 830px;
+}
+.content .img-quic-buy9{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 945px;
+}
+.content .img-quic-buy10{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 1060px;
+}
+.content .img-quic-buy11{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 1175px;
+}
+.content .img-quic-buy12{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 1290px;
+}
+.content .img-quic-buy13{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 1405px;
+}
+.content .img-quic-buy14{
+    position: absolute;
+    width: 58px;
+    height: 85px;
+    left: 34px;
+    top: 1520px;
+}
+.add-to-cart{
+    position: absolute;
+    width: 342px;
+    height: 35px;
+    left: 157px;
+    top: 1631px;
+    
+    background: #007ED2;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    color: white;
+
+    font-size: 18px;
+    border-radius: 5px;
+    
+}
+.cart-pricess{
+    position: absolute;
+    width: 51px;
+    height: 35px;
+    left: 1721px;
+    top: 32px;
+    object-fit: contain;
+}
+.over-fit{
+    position: absolute;
+    width: 342px;
+    height: 35px;
+    top: 1650px;
+    color: white;
+}
+.text-buy-book{
+    position: absolute;
+    left: 400px;
+    top: 1px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+.text-buy-ebook{
+    position: absolute;
+    left: 580px;
+    top: 1px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+.btn-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 25px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn2-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 140px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn3-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 255px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn4-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 370px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn5-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 485px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn6-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 600px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn7-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 715px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn8-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 830px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn9-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 945px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn10-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 1060px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn11-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 1175px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn12-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 1290px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn13-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 1405px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn14-price-book{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 320px;
+    top: 1520px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+
+.btn-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 25px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn2-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 140px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn3-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 255px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn4-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 370px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn5-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 485px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn6-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 600px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn7-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 715px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn8-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 830px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn9-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 945px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn10-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 1060px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn11-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 1175px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn12-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 1290px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn13-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 1405px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+.btn14-price-ebook{
+    position: absolute;
+    width: 147px;
+    height: 42px;
+    left: 500px;
+    top: 1520px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+.text-btn p{
+    position: absolute;
+    left: 10px;
+    top: -5px;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.text-btn p1{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+.text-product p{
+    position: absolute;
+    left: 110px;
+    top: 25px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p2{
+    position: absolute;
+    left: 110px;
+    top: 155px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p3{
+    position: absolute;
+    left: 110px;
+    top: 270px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p4{
+    position: absolute;
+    left: 110px;
+    top: 385px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p5{
+    position: absolute;
+    left: 110px;
+    top: 500px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p6{
+    position: absolute;
+    left: 110px;
+    top: 615px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p7{
+    position: absolute;
+    left: 110px;
+    top: 730px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p8{
+    position: absolute;
+    left: 110px;
+    top: 845px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p9{
+    position: absolute;
+    left: 110px;
+    top: 960px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p10{
+    position: absolute;
+    left: 110px;
+    top: 1075px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p11{
+    position: absolute;
+    left: 110px;
+    top: 1190px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p12{
+    position: absolute;
+    left: 110px;
+    top: 1305px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p13{
+    position: absolute;
+    left: 110px;
+    top: 1420px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+.text-product p14{
+    position: absolute;
+    left: 110px;
+    top: 1535px;
+    font-size: 16px;
+    color: #00B5AD;
+}
+
+.text-product-name p{
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p2{
+    position: absolute;
+    left: 110px;
+    top: 135px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p3{
+    position: absolute;
+    left: 110px;
+    top: 250px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p4{
+    position: absolute;
+    left: 110px;
+    top: 365px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p5{
+    position: absolute;
+    left: 110px;
+    top: 480px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p6{
+    position: absolute;
+    left: 110px;
+    top: 595px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p7{
+    position: absolute;
+    left: 110px;
+    top: 710px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p8{
+    position: absolute;
+    left: 110px;
+    top: 825px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p9{
+    position: absolute;
+    left: 110px;
+    top: 940px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p10{
+    position: absolute;
+    left: 110px;
+    top: 1055px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p11{
+    position: absolute;
+    left: 110px;
+    top: 1170px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p12{
+    position: absolute;
+    left: 110px;
+    top: 1285px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p13{
+    position: absolute;
+    left: 110px;
+    top: 1400px;
+    font-size: 16px;
+    color: #000000;
+}
+.text-product-name  p14{
+    position: absolute;
+    left: 110px;
+    top: 1515px;
+    font-size: 16px;
+    color: #000000;
+}
+.search-bar-menu{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    left: 1354px;
+    top: 34px;
+
+    background: #F1F3F4;
+    border-radius: 3px;
+}

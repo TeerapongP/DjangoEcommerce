@@ -1,0 +1,41 @@
+{% load static  %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact US</title>
+    <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+<body>
+    <section>
+        <div class="heder-text">
+            <h1>ติดต่อและแจ้งปัญหา</h1>
+            <p1>สำหรับคำถามทั่วไปเราอาจมีคำตอบให้คุณเเล้วใน</p1>
+            <a href="###">
+                <p2>หน้าคำถามที่พบบ่อย</p2>
+            </a>    
+            <p3>สำหรับรายการสั่งซื้อที่เลือกชำระด้วยวิธีโอนเงิน กรุณากดปุ่มแจ้งชำระเงินที่</p3>
+            <a href="###">
+                <p4>หน้ารายการสั่งซื้อ</p4>
+            </a>
+            <p5>
+                ในกรณีที่ยังไม่ได้รับคำตอบที่ต้องการหรือต้องการติดต่อเจ้าหน้าที่ สามารถติดต่อได้ตามช่องทางดังต่อไปนี้
+            </p5>
+        </div>
+        <div class="imge-contract">
+            <img class="imge-phone" src="{% static 'images/assets/phone-call.png' %}" alt="">
+            <img class="imge-email" src="{% static 'images/assets/email.png' %}" alt="">
+            <p1>087-328-4793</p1>
+            <p2>thirapong.p@ku.th</p2>
+        </div>
+        <section>
+            <div class="box-contract">
+                <h1>ติดต่อและแจ้งปัญหา</h1>
+                <a href="{% url 'privacypolicy' %}">
+                <h2>นโยบายข้อมูลส่วนบุคคล</h2>
+                </a>
+            </div>
+            <div class="box-contract-line"></div>
+            <div class="box-contract-line2"></div>
+
+            
+    </section>
+    </section>
+</body>
+</html>

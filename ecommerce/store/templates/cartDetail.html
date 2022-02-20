@@ -1,0 +1,57 @@
+{% load static  %}
+<html lang="en">
+<head>
+    <title>CartDetail</title>
+    <link rel="stylesheet" href="{% static 'css/cartDetail.css'%}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="container">
+       {%if not cart_items%}
+
+            <p>ไม่มีสินค้าในตระกร้า</p>
+        {%else%}
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">รายการสินค้า</td>
+                        <td class="description"></td>
+                        <td class="price">ราคา</td>
+                        <td class="quantity">จำนวน</td>
+                        <td class="total">รวม</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for item in cart_items%}
+                    <tr>
+                        <td class="cart_product">
+                            {{item.product.name}}
+                        </td>
+                        <td class="cart_description">
+                            
+                        </td>
+                        <td class="cart_price">
+                            <p>{{item.product.price}}</p>
+                        </td>
+                        <td class="cart_quantity">
+                                <p>{{item.quantity}}</p>
+                            </div>
+                        </td>
+                        <td class="cart_total">
+                            <p class="cart_total_price">{{item.sub_total}}</p>
+                        </td>
+                        <td class="cart_delete">
+                            <a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </div>
+        {%endif%}
+        <h4 class="text-right">ยอดชำระเงิน {{total}} บาท</h4>
+    </div>
+</body>

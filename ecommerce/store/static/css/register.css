@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+*{
+    font-family: 'Kanit', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.logo-img img{ 
+    position: absolute;
+    border-radius: 50%;
+    width: 79px;
+    height: 79px;
+    left: 802px;
+    top: 20px;
+    object-fit: cover;
+}
+
+.text-store h1{
+    position: absolute;
+    width: 190px;
+    height: 30px;
+    left: 893px;
+    top: 25px;
+
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.line-under-text {
+    position: absolute;
+    width: 163px;
+    height: 0px;
+    left: 893px;
+    top: 58px;
+    
+    border: 1px solid #000000;
+
+}
+.text-store h2{
+    position: absolute;
+    width: 148px;
+    height: 14px;
+    left: 908px;
+    top: 65px;
+
+    font-size: 14px;
+    line-height: 14px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.border-register{
+    position: absolute;
+    width: 507px;
+    height: 628px;
+    left: 721px;
+    top: 138px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.text-register h1{
+    position: absolute;
+    width: 172px;
+    height: 42px;
+    left: 70px;
+    top: 42px;
+
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+.text-register p{
+    position: absolute;
+    left: 37px;
+    top: 110px;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    color: #000000;
+}
+.username-input{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    left: 37px;
+    top: 140px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.username-input[type=text]{
+    font-size: 18px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    line-height: 21px;
+    padding-left: 64px;
+    display: flex;
+
+    color: rgba(0, 0, 0, 0.5);
+}
+.images-user{
+    position: absolute;
+    width: 28px;
+    height: 29px;
+    top: 145px;
+    left: 54px;
+    object-fit: contain;
+}
+.text-register p2{
+    position: absolute;
+    top: 200px;
+    left: 39px;
+
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.text-register p4{
+    position: absolute;
+    top: 290px;
+    left: 39px;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+.password-input{
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    top: 230px;
+    left: 37px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.password-confirm-input{
+
+    position: absolute;
+    width: 350px;
+    height: 40px;
+    top: 320px;
+    left: 37px;
+
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+.password-confirm-input[type=password]{
+    font-size: 18px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    line-height: 21px;
+    padding-left: 64px;
+    display: flex;
+    
+    color: rgba(0, 0, 0, 0.5);
+}
+.password-input[type=password]{
+    font-size: 18px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    line-height: 21px;
+    padding-left: 64px;
+    display: flex;
+    
+    color: rgba(0, 0, 0, 0.5);
+}
+.images-password{
+    position: absolute;
+    width: 28px;
+    height: 29px;
+    top: 235px;
+    left: 54px;
+    object-fit: contain;
+}
+.images-password-confirm{
+    position: absolute;
+    width: 28px;
+    height: 29px;
+    top: 325px;
+    left: 54px;
+    object-fit: contain;
+}
+.btn-register{
+    position: absolute;
+    width: 280px;
+    height: 45px;
+
+    top: 380px;
+    left: 80px;
+    background-color: #007ED2;
+    border: none;
+    color: white;
+
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.text-register h2{
+    position: absolute;
+    width: 396px;
+    height: 1px;
+    top: 450px;
+    left: 40px;
+    
+    background: #000000;
+}
+.text-register p3{
+    position: absolute;
+    top: 460px;
+    left: 200px;
+
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+.btn-password{
+    position: absolute;
+    width: 280px;
+    height: 45px;
+
+    top: 500px;
+    left: 80px;
+    background-color: #007ED2;
+    border: none;
+    color: white;
+
+    font-size: 24px;
+    border-radius: 5px;
+}

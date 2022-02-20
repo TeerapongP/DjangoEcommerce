@@ -1,0 +1,340 @@
+{% load static  %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>จะยังไงภรรยาผมก็น่ารัก</title>
+    <link rel="stylesheet" href="{% static 'css/product4.css'%}">
+<body>
+    {% include "navbar.html" %}
+        <div class="parent">
+            <img class="showimge-product" src="{% static 'images/ภรรยา/1.jpg' %}" alt="">
+        </div>
+        {%for product in products%}
+        <div class="popup" id="popup-1">
+            <div class="overlay">
+                <div class="content">
+                    <div class="text-product">
+                        <p>MANGA</p>
+                        <p2>MANGA</p2>
+                        <p3>MANGA</p3>
+                        <p4>MANGA</p4>
+                        <p5>MANGA</p5>
+                        <p6>MANGA</p6>
+                        <p7>MANGA</p7>
+                    </div>
+                    <div class="text-product-name">
+                        <p>{{product.name}} 1</p>
+                        <p2>{{product.name}} 2</p2>
+                        <p3>{{product.name}} 3</p3>
+                        <p4>{{product.name}} 4</p4>
+                        <p5>{{product.name}} 5</p5>
+                        <p6>{{product.name}} 6</p6>
+                        <p7>{{product.name}} 7</p7>
+                    </div>
+                    <img class="img-quic-buy1" src="{% static 'images/ภรรยา/1.jpg'%}" alt="">
+                    <img class="img-quic-buy2" src="{% static 'images/ภรรยา/2.jpg'%}" alt="">
+                    <img class="img-quic-buy3" src="{% static 'images/ภรรยา/3.jpg'%}" alt="">
+                    <img class="img-quic-buy4" src="{% static 'images/ภรรยา/4.jpg'%}" alt="">
+                    <img class="img-quic-buy5" src="{% static 'images/ภรรยา/5.jpg'%}" alt="">
+                    <img class="img-quic-buy6" src="{% static 'images/ภรรยา/6.jpg'%}" alt="">
+                    <img class="img-quic-buy7" src="{% static 'images/ภรรยา/7.jpg'%}" alt="">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>  
+                    <input class="add-to-cart" type="button" value="ADD TO CART"> 
+                    <div class="over-fit"></div>
+                    <div class="btn-price">
+                        <button class="btn-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn2-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn3-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn4-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn5-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn6-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn7-price-book">
+                            <div class="text-btn">
+                                <p>หนังสือ</p>
+                                <p1>70</p1>
+                            </div>
+                        </button>
+                        <button class="btn-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn2-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn3-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn4-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn5-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn6-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                        <button class="btn7-price-ebook">
+                            <div class="text-btn">
+                                <p>อีบุ๊ค</p>
+                                <p1>55</p1>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input class="btn-buy" type="button" value="Quick Buy" onclick="togglePopup()">
+        <div class="present-procuct">
+            <h1>จะยังไงภรรยาผมก็น่ารัก</h1>
+            <h2>สินค้าที่เกี่ยวข้อง</h2>
+            <p1>เรื่องย่อ</p1>
+            <p2>
+                เปิดฉากคอเมดี้คู่สามีภรรยาแห่งความรักและความสุข !! ยูซากิ นาสะ <br>ถึงจะเป็นเด็กที่เรียนดี แต่ก็เป็นพระเอกของรื่องที่ออกจะพิลึกพิลักหน่อย<br>วันหนึ่งโชคชะตาก็ทำให้เขาได้ตกหลุมรักกับสึคาสะสาวสวยปริศนา<br>และคำตอบของเธอที่ตอบคำสารภาพรักของนาสะที่ถึงขนาดเตรียมใจตายก็คือ <br>"ถ้ายอมแต่งงานกับฉันล่พก็จะยอมคบด้วย"!?<br>ถึงจะยังมีปริศนาอยู่ก็จริงแต่ชีวิตของคู่แต่งงานใหม่กับภรรยาแสนน่ารักก็ได้เริ่มขึ้น!!
+            </p2>
+            <p3>ข้อมูลหนังสือ</p3>
+            <p4>
+                เรื่อง : Tonikaku Kawaii<br>
+                ภาพ : Tonikaku Kawaii<br>
+                สำนักพิมพ์ : Luckinter<br>
+                Genres :  	ตลกเฮฮา ,  โรแมนติก ,  slice of life      
+            </p4>
+            <div class="border-line"></div>
+            <div class="border-line-product">
+                <div class="border-line-product1">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/1.jpg'%}" alt="" srcset="">
+                    </div>
+                 
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 1 </p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product2">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/2.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 2</p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product3">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/3.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 3</p1>
+                        <p2>Tonikaku Kawaii</p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                     </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product4">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/4.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 4</p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product5">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/5.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 5</p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product6">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/6.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 6</p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-line-product7">
+                    <div class="img-product">
+                        <img src="{% static 'images/ภรรยา/7.jpg'%}" alt="" srcset="">
+                    </div>
+                    <div class="text-border">
+                        <p>MANGA</p>
+                        <p1>{{product.name}} 7</p1>
+                        <p2>Tonikaku Kawaii   </p2>
+                        <p3>หนังสือ</p3>
+                        <p4>อีบุ๊ค</p4>
+                    </div>
+                    <a href="{%url 'addCart' product.id %}">
+                    <div class="border-price">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>70</p1>
+                        </div>
+                    </div>
+                    </a>
+                    <div class="border-price2">
+                        <div class="border-price-text">
+                            <p>&#xE3F</p>
+                            <p1>55</p1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="{% static 'js/products.js' %}"></script>
+    {%endfor%}
+</html>
