@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import get_object_or_404, redirect, render
 # Create your views here.
 from store.models import Product,Cart,CartItem
@@ -129,7 +130,11 @@ def addCart(request,product_id):
     return redirect('cartDetail')
 
 def removeCart(request,product_id):
+    #ทำงานกับสินค้าที่จะลบ
     cart =Cart.objects.get(cart_id=_cart_id(request))
-
-    product = get_object_or_404(Product,product_id)
+    #ทำงานกับสินค้าที่จะลบ
+    product = get_object_or_404(Product,id=product_id)
     cartItem = CartItem.objects.get(product=product,cart=cart)
+    #ลบรายการสินค้า 1 ออกจากตระกร้า A โดยลบจาก รายการสินค้าในตระกร้า
+    cartItem.delete()
+    return redirect('cartDetail')
