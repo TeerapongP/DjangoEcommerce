@@ -362,6 +362,7 @@
                 สำนักพิมพ์ : Luckinter<br>
                 Genres : ตลกเฮฮา ,  ดราม่า ,  โรแมนติก  
             </p4>
+            {% block content %}
             <div class="border-line"></div>
             <div class="border-line-product">
                 <div class="border-line-product1">
@@ -917,6 +918,7 @@
                 </div>
             </div>
         </div>
+        {% endblock content %}
     </body>
     <script src="{% static 'js/products.js' %}"></script>
     {%endfor%}

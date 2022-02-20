@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
 # Create your views here.
 from store.models import Product,Cart,CartItem
 import operator
@@ -127,3 +127,9 @@ def addCart(request,product_id):
         )
         cart_item.save()
     return redirect('cartDetail')
+
+def removeCart(request,product_id):
+    cart =Cart.objects.get(cart_id=_cart_id(request))
+
+    product = get_object_or_404(Product,product_id)
+    cartItem = CartItem.objects.get(product=product,cart=cart)

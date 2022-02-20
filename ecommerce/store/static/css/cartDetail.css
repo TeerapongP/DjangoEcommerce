@@ -209,3 +209,25 @@
     left: 400px;
     top: 200px;
 }
+.cart-product {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1773px;
+    top: 37px;
+
+    background: #F2711C;
+    border-radius: 2px;
+}
+.cart-product p{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}

@@ -29,8 +29,15 @@
             <h6>CONTACT US</h6>
             </a>
             <h7>FAQ</h7>
-            
         </div>
+    </div>
+    <div class="cart-product">
+        {%if item_count > 0 %}
+            <p>{{item_count}}</p>
+        {%else%}
+            0
+        {%endif%}
+        
     </div>
     <div class="search-bar-menu">
         <div class="search-bar"></div>
@@ -42,4 +49,5 @@
     <div class="parent">
         <img class="logo1" src="{% static 'images/assets/logo.png'%}">
     </div>
+
 </div>

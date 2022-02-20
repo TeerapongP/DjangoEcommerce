@@ -25,14 +25,8 @@
     background: #F2711C;
     border-radius: 2px;
 }
-.cart-pricess{
-    position: absolute;
-    width: 51px;
-    height: 35px;
-    left: 1721px;
-    top: 32px;
-    object-fit: contain;
-}
+
+
 .login-btn{
     position: absolute;
     width: 78px;
@@ -651,3 +645,4 @@
     position: absolute;
     top: 180px;
 }
+
