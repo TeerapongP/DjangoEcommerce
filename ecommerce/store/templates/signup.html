@@ -1,0 +1,12 @@
+{% include "navbar.html" %}
+<body>
+    {%load crispy_forms_tags %}
+    <div class="container">
+        <h2 align="center">แบบฟอร์มลงทะเบียน</h2>
+        <form method="post">
+            {% csrf_token %}
+            <p>{{form | crispy}}</p>
+            <input type="submit" class="btn btn-primary " value="Register">
+        </form>
+    </div>
+</body>

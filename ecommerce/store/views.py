@@ -1,14 +1,15 @@
 import re
+from unicodedata import name
 from django.shortcuts import get_object_or_404, redirect, render
 # Create your views here.
 from store.models import Product,Cart,CartItem
-import operator
-
+from store.forms import SignUpForm
+from django.contrib.auth.models import Group,User
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import login,authenticate
 
 def index(request):
     return render(request,'index.html')
-
-
 
 def contact(request):
     return render(request,'contact.html')
@@ -19,11 +20,42 @@ def series(request):
 def privacypolicy(request):
     return render(request,'privacypolicy.html')
 
-def login(request):
-    return render(request,'login.html')
+def login_(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(data=request.POST)
+        if form.is_valid():
+            username = request.POST['username']
+            password = request.POST['password']
+            user = authenticate(username=username,password=password)
+            if user is not None:
+                login(request,user)
+                return redirect('index')
+            else :
+                return redirect('signup')
+    else:
+        form = AuthenticationForm()
 
-def register(request):
-    return render(request,'register.html')
+    return render(request,'login.html',{'form':form})
+
+def signup(request):
+    if request.method =='POST':
+        form=SignUpForm(request.POST)
+        if form.is_valid():
+            #บันทึกข้อมูล User
+            form.save()
+            #บันทึก Group Customer
+            #ดึง Username จากแบบฟอร์มมาใช้
+            username = form.cleaned_data.get('username')
+            #ดึงข้อมูล user มาจากฐานข้อมูล
+            signupUser = User.objects.get(username=username)
+            #จัด Group 
+
+            customer_group = Group.objects.get(name="Customer")
+            customer_group.user_set.add(signupUser)
+    else:
+        form = SignUpForm()
+    return render(request,'signup.html',{'form':form})
+
 
 def product1(request):
     products=None
