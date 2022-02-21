@@ -1669,6 +1669,16 @@ html,body{
 
     color: #000000;
 } 
+.search-bar-menu{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    left: 1354px;
+    top: 34px;
+
+    background: #F1F3F4;
+    border-radius: 3px;
+}
 .logout-btn{
     position: absolute;
     width: 78px;

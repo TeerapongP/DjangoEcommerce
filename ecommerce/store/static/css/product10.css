@@ -1757,7 +1757,16 @@ html,body{
     background: #F2711C;
     border-radius: 2px;
 }
+.search-bar-menu{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    left: 1354px;
+    top: 34px;
 
+    background: #F1F3F4;
+    border-radius: 3px;
+}
 .text-store-bar h7{
     position: absolute;
     width: 75px;
