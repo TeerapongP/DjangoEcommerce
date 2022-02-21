@@ -1742,6 +1742,18 @@ html,body{
     top: 2500px;
     color: white;
 }
+.cart-product p{
+    position: absolute;
+    top: -18px;
+    left: 6px;
+    font-size: 22px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgb(255, 255, 255);
+}
 .cart-product {
     position: absolute;
     width: 25px;
@@ -1752,18 +1764,7 @@ html,body{
     background: #F2711C;
     border-radius: 2px;
 }
-.cart-product p{
-    position: absolute;
-    top: 4px;
-    left: 5px;
-    font-size: 18px;
-    line-height: 19px;
-    display: flex;
-    align-items: center;
-    text-align: center;
 
-    color: #FFFFFF;
-}
 .text-store-bar h7{
     position: absolute;
     width: 75px;

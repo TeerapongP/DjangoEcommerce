@@ -127,8 +127,27 @@ def addCart(request,product_id):
             quantity = 1,
         )
         cart_item.save()
-    return redirect('cartDetail')
-
+    if product_id == 1:
+        return redirect('product1')
+    if product_id == 2:
+        return redirect('product2')
+    if product_id == 3:
+        return redirect('product3')
+    if product_id == 5:
+        return redirect('product4')
+    if product_id == 6:
+        return redirect('product5')
+    if product_id == 7:
+        return redirect('product6')
+    if product_id == 8:
+        return redirect('product7')
+    if product_id == 9:
+        return redirect('product8')
+    if product_id == 10:
+        return redirect('product9')
+    if product_id == 11:
+        return redirect('product10')
+        
 def removeCart(request,product_id):
     #ทำงานกับสินค้าที่จะลบ
     cart =Cart.objects.get(cart_id=_cart_id(request))
