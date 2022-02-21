@@ -8,7 +8,52 @@
     <link rel="stylesheet" href="{% static 'css/product9.css'%}">
 </head>
 <body>
-    {% include "navbar.html" %}
+    <div class="text-store">
+        <h1>L U C K I N T E R</h1>
+        </a>
+        <h5>PUBLISHING CO, LTD.</h5>
+        <input class="login-btn" type="button" value="Login"></a>
+        <a href="{% url 'cartDetail' %}">
+        <img class="cart-pricess" src="{% static 'images/assets/shopping-cart.png'%}" alt="">
+        </a>
+    </div>
+    <div class="line-under-text"></div>
+        <div class="border-radius">
+            <h5></h5>
+            <div class="text-store-bar">
+                <a href="{% url 'index' %}">
+                <h1>>LUCKINTER<</h1>
+                </a>
+                <h2>SHOP</h2>
+                <a href="{% url 'series' %}">
+                <h3>SERIES</h3>
+                </a>
+                <h4>REWARDS</h4>
+                <a href="{% url 'contact' %}">
+                <h6>CONTACT US</h6>
+                </a>
+                <h7>FAQ</h7>
+            </div>
+        </div>
+        <div class="cart-product">
+            {%if item_count > 0 %}
+                <p>{{item_count}}</p>
+            {%else%}
+                0
+            {%endif%}
+            
+        </div>
+        <div class="search-bar-menu">
+            <div class="search-bar"></div>
+            <div class="text-search">
+                <p>Search</p>
+            </div>
+            <img class="search-item" src="{% static 'images/assets/glass.png'%}" alt="">
+        </div>
+        <div class="parent">
+            <img class="logo1" src="{% static 'images/assets/logo.png'%}">
+        </div>
+    </div>
         <input class="btn-buy" type="button" value="Quick Buy" onclick="togglePopup()">
         <div class="parent">
             <img class="showimge-product" src="{% static 'images/หนุ่มเย็บผ้า/1.jpg'%}">
@@ -260,7 +305,7 @@
                         </div>
                     </div>
                     </a>
-                    <div class="border-price6">
+                    <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
                             <p1>55</p1>

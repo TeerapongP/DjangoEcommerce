@@ -922,3 +922,41 @@ html,body{
     top: 900px;
     color: white;
 }
+
+.cart-product {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1773px;
+    top: 37px;
+
+    background: #F2711C;
+    border-radius: 2px;
+}
+.cart-product p{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.text-store-bar h7{
+    position: absolute;
+    width: 75px;
+    height: 36px;
+    left: 1491px;
+    top: 120px;
+
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+} 

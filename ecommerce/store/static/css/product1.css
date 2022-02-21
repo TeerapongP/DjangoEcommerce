@@ -162,12 +162,12 @@ html,body{
 
     color: #000000;
 }
-.text-store-bar h5{
+.text-store-bar h7{
     position: absolute;
     width: 75px;
     height: 36px;
     left: 1491px;
-    top: 91px;
+    top: 120px;
 
     font-size: 18px;
     line-height: 21px;
@@ -286,8 +286,8 @@ html,body{
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 1357px;
-    top: 38px;
+    left: 1px;
+    top: 5px;
     object-fit: contain;
 }
 .btn-buy{
@@ -1328,4 +1328,26 @@ html,body{
 
     background: #F1F3F4;
     border-radius: 3px;
+}
+.cart-product {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1773px;
+    top: 37px;
+
+    background: #F2711C;
+    border-radius: 2px;
+}
+.cart-product p{
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
 }
