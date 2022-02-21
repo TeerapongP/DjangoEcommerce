@@ -160,11 +160,21 @@
     box-sizing: border-box;
     border-radius: 3px;
 }
+.logout-btn{
+    position: absolute;
+    width: 78px;
+    height: 38px;
+    top:31px;
+    left: 1730px;
+    border: 1px solid #F1F3F4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
 .cart-pricess{
     position: absolute;
     width: 51px;
     height: 35px;
-    left: 1721px;
+    left: 1825px;
     top: 32px;
     object-fit: contain;
 }
@@ -213,7 +223,7 @@
     position: absolute;
     width: 25px;
     height: 25px;
-    left: 1773px;
+    left: 1870px;
     top: 37px;
 
     background: #F2711C;

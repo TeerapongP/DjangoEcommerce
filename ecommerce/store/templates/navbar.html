@@ -8,7 +8,12 @@
     <h1>L U C K I N T E R</h1>
     </a>
     <h5>PUBLISHING CO, LTD.</h5>
-    <input class="login-btn" type="button" value="Login"></a>
+    <a href="{% url 'login_' %}"></a>
+    <input class="login-btn" type="button" value="Login">
+    </a>
+    <a href="{% url 'signout' %}">
+    <input class="logout-btn" type="button" value="Logout">
+    </a>
     <a href="{% url 'cartDetail' %}">
     <img class="cart-pricess" src="{% static 'images/assets/shopping-cart.png'%}" alt="">
     </a>
