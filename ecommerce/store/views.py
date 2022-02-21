@@ -6,7 +6,7 @@ from store.models import Product,Cart,CartItem
 from store.forms import SignUpForm
 from django.contrib.auth.models import Group,User
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import login,authenticate
+from django.contrib.auth import login,authenticate,logout
 
 def index(request):
     return render(request,'index.html')
@@ -36,6 +36,10 @@ def login_(request):
         form = AuthenticationForm()
 
     return render(request,'login.html',{'form':form})
+
+def signout(request):
+    logout(request)
+    return redirect('login_')
 
 def signup(request):
     if request.method =='POST':
@@ -106,6 +110,8 @@ def product10(request):
     products=None
     products=Product.objects.filter(id=11).only('name')
     return render(request,'product10.html',{'products':products})
+
+
 
 def cartDetail(request):
     total = 0
