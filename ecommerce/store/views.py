@@ -1,6 +1,7 @@
 import re
 from unicodedata import name
 from django.shortcuts import get_object_or_404, redirect, render
+from matplotlib.pyplot import title
 # Create your views here.
 from store.models import Product,Cart,CartItem
 from store.forms import SignUpForm
@@ -195,3 +196,6 @@ def removeCart(request,product_id):
     #ลบรายการสินค้า 1 ออกจากตระกร้า A โดยลบจาก รายการสินค้าในตระกร้า
     cartItem.delete()
     return redirect('cartDetail')
+
+# def search(request):
+#     re
