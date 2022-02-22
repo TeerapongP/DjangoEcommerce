@@ -1,16 +1,39 @@
+from pydoc import pager
 import re
-from unicodedata import name
+from unicodedata import category, name
 from django.shortcuts import get_object_or_404, redirect, render
 from matplotlib.pyplot import title
+from matplotlib.style import available
 # Create your views here.
-from store.models import Product,Cart,CartItem
+from store.models import Category, Product,Cart,CartItem
 from store.forms import SignUpForm
 from django.contrib.auth.models import Group,User
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login,authenticate,logout
+from django.core.paginator import Paginator,EmptyPage,InvalidPage
 
-def index(request):
-    return render(request,'index.html')
+
+def index(request,category_slug=None):
+    products= None
+    category_page = None
+    if category_slug!=None:
+        category_page=get_object_or_404(Category,slug=category_slug)
+        products=Product.objects.all().filter(category=category_page,available=True)
+    else: 
+        products= Product.objects.all().filter(available=True)
+
+    paginator = Paginator(products,4)
+    try:
+       page = int(request.Get.get('page','1'))
+    except:
+        page = 1
+    try:
+       productperPage = paginator.page(page)
+    except(EmptyPage,InvalidPage):
+
+        productperPage=paginator.page(paginator.num_pages)
+    
+    return render(request,'index.html',{'products':productperPage,'category':category_page})
 
 def contact(request):
     return render(request,'contact.html')
@@ -197,5 +220,7 @@ def removeCart(request,product_id):
     cartItem.delete()
     return redirect('cartDetail')
 
-# def search(request):
-#     re
+def search(request):
+    
+    products = Product.objects.filter(name__contains = request.GET['title']).order_by('-id')
+    return render(request,'index.html',{'products':products})
