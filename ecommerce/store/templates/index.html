@@ -28,16 +28,6 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
         </div>
-        {% for product in products %}
-        <form action="{% url 'search' %}" method="GET">
-            <div class="input-group">
-                <input type="text" name="title" class="search-bar-menu" placeholder="Search..." >
-                <div class="input-group-append">
-                    <button type="submit" class="search-item-menu"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </div>
-            </div>
-        </form>
-        {%endfor%}
         <div class="parent">
             <img class="logo1" src="{% static 'images/assets/logo.png'%}">
         </div>

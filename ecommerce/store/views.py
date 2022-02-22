@@ -11,6 +11,7 @@ from django.contrib.auth.models import Group,User
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login,authenticate,logout
 from django.core.paginator import Paginator,EmptyPage,InvalidPage
+from django.contrib.auth.decorators import login_required
 
 
 def index(request,category_slug=None):
@@ -159,7 +160,7 @@ def _cart_id(request):
     if not cart:
         cart = request.session.create()
     return cart
-
+@login_required(login_url='login_')
 def addCart(request,product_id):
     #รหัสสินค้า
     #ดึงสินค้าตามรหัสที่ส่งมา
@@ -220,7 +221,5 @@ def removeCart(request,product_id):
     cartItem.delete()
     return redirect('cartDetail')
 
-def search(request):
-    
-    products = Product.objects.filter(name__contains = request.GET['title']).order_by('-id')
-    return render(request,'index.html',{'products':products})
+
+
