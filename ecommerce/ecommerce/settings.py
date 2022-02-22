@@ -1,5 +1,7 @@
 import os 
 from pathlib import Path
+import sys
+import stripe
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -33,7 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'store',
-    'crispy_forms'
+    'crispy_forms',
+    'stripe',
     
 ]
 
@@ -127,3 +130,6 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+PUBLIC_KEY = 'pk_test_51KVw3GCPt47U3bRgXOlRJvJ0GjCdCqTA6Kk7bZFJuffVT4cpLn5SYg1G6Sgy1Ene3EAbiChxvjMf7Iqxo9lhUyPq00mllTHhCk'
+SECRET_KEY = 'sk_test_51KVw3GCPt47U3bRg3C4dDJOgWnzmsvn9cwIB44YqTmuPotzfRakIY0qRPThtZvhCJlzMlBdPpHQklBrrzdmoCr7y00BBNpdNJZ'
