@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LUCKINTER</title>
     <link rel="stylesheet" href="{% static 'css/index.css'%}">
-    
+
     
 </head>
 <body >
@@ -28,13 +28,15 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
         </div>
-        <input class="search-bar-menu type="text" placeholder="Search..">
         <div class="parent">
             <img class="logo1" src="{% static 'images/assets/logo.png'%}">
         </div>
         <div class="text-store">
             <h1>L U C K I N T E R</h1>
             <h5>PUBLISHING CO, LTD.</h5>
+            <a href="{% url 'orderHistory' %}">
+            <img class="user-order" src="{% static 'images/assets/user.png'%}" alt="">
+            </a>
             <a href="{% url 'login_' %}">
             <input class="login-btn" type="button" value="Login">
             </a>
@@ -133,4 +135,5 @@
         </div>
     </section>
     <script src="{% static 'js/indext.js' %}"></script>
+
 </body>

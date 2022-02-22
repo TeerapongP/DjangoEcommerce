@@ -1,9 +1,13 @@
 from distutils.command.upload import upload
+import email
+from lib2to3.pgen2 import token
 from pyexpat import model
 from tabnanny import verbose
+from turtle import update
 from unicodedata import category, name
 from django.db import models
 from django.forms import CharField
+from matplotlib.pyplot import cla
 
 
 
@@ -30,7 +34,7 @@ class Product(models.Model):
     stock=models.IntegerField()
     available=models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
-    created = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return self.name
@@ -70,3 +74,37 @@ class CartItem(models.Model):
 
     def __str__(self):
         return self.product.name
+
+class Order(models.Model):
+    name=models.CharField(max_length=255,blank=True)
+    address=models.CharField(max_length=255,blank=True)
+    city=models.CharField(max_length=255,blank=True)
+    postcode=models.CharField(max_length=255,blank=True)
+    total=models.DecimalField(max_digits=10,decimal_places=2)
+    email=models.EmailField(max_length=250,blank=True)
+    token=models.CharField(max_length=255,blank=True)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    
+    class Meta:
+        db_table='Order'
+        ordering=('id',)
+
+    def __str__(self):
+        return str(self.id)
+
+class OrderItem(models.Model):
+    product=models.CharField(max_length=250)
+    quantity=models.IntegerField()
+    price = models.DecimalField(max_digits=10,decimal_places=2)
+    order = models.ForeignKey(Order,on_delete=models.CASCADE)
+
+    class Meta:
+        db_table='OrderItem'
+        ordering=('order',)
+
+    def sub_total(self):
+        return self.quantity * self.price
+
+    def __str__(self):
+        return self.product

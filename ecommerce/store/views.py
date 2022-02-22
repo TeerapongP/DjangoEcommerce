@@ -1,12 +1,22 @@
-import re
-from unicodedata import name
+from distutils.log import error
+import email
+from lib2to3.pgen2 import token
+from locale import currency
+from pydoc import pager
+from unicodedata import category, name
 from django.shortcuts import get_object_or_404, redirect, render
+from matplotlib.pyplot import title
+from matplotlib.style import available
+from numpy import source
 # Create your views here.
-from store.models import Product,Cart,CartItem
+from store.models import  Product,Cart,CartItem,Order,OrderItem
 from store.forms import SignUpForm
 from django.contrib.auth.models import Group,User
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login,authenticate,logout
+from django.contrib.auth.decorators import login_required
+from django.conf import settings
+import stripe
 
 def index(request):
     return render(request,'index.html')
@@ -59,7 +69,6 @@ def signup(request):
     else:
         form = SignUpForm()
     return render(request,'signup.html',{'form':form})
-
 
 def product1(request):
     products=None
@@ -117,7 +126,6 @@ def cartDetail(request):
     total = 0
     couter = 0
     cart_items = None
-
     try:
         cart = Cart.objects.get(cart_id=_cart_id(request))#ดึงตระกร้าสินค้า
         cart_items = CartItem.objects.filter(cart=cart,active = True)#ดึงข้อมูลในตระกร้าสินค้า
@@ -126,9 +134,68 @@ def cartDetail(request):
             couter+=item.quantity
     except Exception as e:
         pass
+
+    stripe.api_key = settings.SECRET_KEY
+    stripe_total = int(total*100)
+    description = "Payment Online"
+    data_key = settings.PUBLIC_KEY
+
+    if request.method=="POST":
+        try:
+            token = request.POST['stripeToken']
+            email = request.POST['stripeEmail']
+            name = request.POST['stripeBillingName']
+            address = request.POST['stripeBillingAddressLine1']
+            city =  request.POST['stripeBillingAddressCity']
+            postcode = request.POST['stripeShippingAddressZip']
+
+            customer = stripe.Customer.create(
+                email = email,
+                source =token
+            )
+            charge = stripe.Charge.create(
+                amount = stripe_total,
+                currency = 'thb',
+                description = description,
+                customer = customer.id
+            )
+            #บันทึกข้อมูลการสั่งซื้อ
+            order = Order.objects.create(
+                name = name,
+                address = address,
+                city = city,
+                postcode = postcode,
+                total = total,
+                email = email,
+                token = token
+            )
+            order.save()
+
+            #บันทึกข้อมูลสินค้า
+            for item in cart_items:
+                order_item = OrderItem.objects.create(
+                    product = item.product.name,
+                    quantity = item.quantity,
+                    price = item.product.price,
+                    order = order
+                )
+                order_item.save()
+
+                #ลดจำนวนstock
+                product = Product.objects.get(id=item.product.id)
+                product.stock= int(item.product.stock - order_item.quantity)
+                product.save()
+                #ลบตระกร้าสินค้า
+                item.delete()
+            return redirect ('index')
+
+    
+        except stripe.error.CardError as e:
+            return False , e
+
     return render(request,'cartDetail.html',dict(cart_items=cart_items,
-    total=total,
-    couter = couter))
+    total=total,couter = couter,data_key=data_key,stripe_total=stripe_total,description=description))
+
 
 def _cart_id(request):
     cart = request.session.session_key
@@ -136,6 +203,8 @@ def _cart_id(request):
         cart = request.session.create()
     return cart
 
+
+@login_required(login_url='login_')
 def addCart(request,product_id):
     #รหัสสินค้า
     #ดึงสินค้าตามรหัสที่ส่งมา
@@ -195,3 +264,19 @@ def removeCart(request,product_id):
     #ลบรายการสินค้า 1 ออกจากตระกร้า A โดยลบจาก รายการสินค้าในตระกร้า
     cartItem.delete()
     return redirect('cartDetail')
+
+
+def orderHistory(request):
+    if request.user.is_authenticated:
+        email = str(request.user.email)
+        orders = Order.objects.filter(email=email)
+
+    return render(request,'orders.html',{'orders':orders})
+
+def viewOrder(request,order_id):
+    if request.user.is_authenticated:
+        email = str(request.user.email)
+        order = Order.objects.get(email=email,id=order_id)
+        orderitem = OrderItem.objects.filter(order=order)
+    return render(request,'vieworder.html',{'order':order,'order_items':orderitem})
+
