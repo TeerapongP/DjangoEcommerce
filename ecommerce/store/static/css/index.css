@@ -656,3 +656,12 @@
     box-sizing: border-box;
     border-radius: 3px;
 }
+.search-bar-menu{
+    position: absolute;
+    width: 210px;
+    height: 35px;
+    left: 1354px;
+    top: 34px;
+    background: #F1F3F4;
+
+}
