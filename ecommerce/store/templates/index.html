@@ -32,6 +32,7 @@
             <img class="logo1" src="{% static 'images/assets/logo.png'%}">
         </div>
         <div class="text-store">
+            
             <h1>L U C K I N T E R</h1>
             <h5>PUBLISHING CO, LTD.</h5>
             <a href="{% url 'orderHistory' %}">
@@ -48,8 +49,12 @@
         <div class="border-radius">
             <h5></h5>
             <div class="text-store-bar">
+                <a href="{% url 'index' %}">
                 <h1>>LUCKINTER<</h1>
+                </a>
+                <a href="{% url 'cartDetail' %}">
                 <h2>SHOP</h2>
+                </a>
                 <a href="{% url 'series' %}">
                 <h3>SERIES</h3>
                 </a>
@@ -61,8 +66,9 @@
             </div>
         </div>
         <div class="series-text">
-            <h1>Series</h1>
+            <a href="{% url 'series' %}">
             <h2>ดูทั้งหมด ></h2>
+            </a>
         </div>
 
         <div class="images-series-top">
