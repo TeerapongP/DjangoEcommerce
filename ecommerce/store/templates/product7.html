@@ -36,7 +36,9 @@
                 </a>
                 <h4>REWARDS</h4>
                 {% if request.user.is_authenticated and request.user.username %}
+                <a href="{% url 'orderHistory' %}">
                 <h5>WELLCOME {{request.user.username}}</h5>
+                </a>
                 {% else %}
                 <h5>WELLCOME USER</h5>
                 {% endif %}

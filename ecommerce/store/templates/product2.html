@@ -42,7 +42,9 @@
                 <h6>CONTACT US</h6>
                 </a>
                 {% if request.user.is_authenticated and request.user.username %}
+                <a href="{% url 'orderHistory' %}">
                 <h7>WELLCOME {{request.user.username}}</h7>
+                </a>
                 {% else %}
                 <h7>WELLCOME USER</h7>
                 {% endif %}

@@ -35,9 +35,6 @@
             
             <h1>L U C K I N T E R</h1>
             <h5>PUBLISHING CO, LTD.</h5>
-            <a href="{% url 'orderHistory' %}">
-            <img class="user-order" src="{% static 'images/assets/user.png'%}" alt="">
-            </a>
             <a href="{% url 'login_' %}">
             <input class="login-btn" type="button" value="Login">
             </a>
@@ -61,7 +58,9 @@
                 </a>
                 <h4>REWARDS</h4>
                 {% if request.user.is_authenticated and request.user.username %}
+                <a href="{% url 'orderHistory' %}">
                 <h5>WELLCOME {{request.user.username}}</h5>
+                </a>
                 {% else %}
                 <h5>WELLCOME USER</h5>
                 {% endif %}
