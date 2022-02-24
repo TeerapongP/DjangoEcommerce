@@ -45,6 +45,16 @@
     box-sizing: border-box;
     border-radius: 3px;
 }
+.logout-btn{
+    position: absolute;
+    width: 78px;
+    height: 38px;
+    top:31px;
+    left: 1730px;
+    border: 1px solid #F1F3F4;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
 /* All Text */
 .text-store h1{
     position: absolute;
