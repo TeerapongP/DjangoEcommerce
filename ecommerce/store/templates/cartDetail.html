@@ -1,4 +1,5 @@
 {% load static  %}
+
 <html lang="en">
 <head>
     <title>CartDetail</title>
@@ -8,8 +9,8 @@
 <body>
     {% include "navbar.html" %}
     <div class="container">
-       {%if not cart_items%}
-            <p>ไม่มีสินค้าในตระกร้า</p>
+        {%if not cart_items%}
+        <p>ไม่มีสินค้าในตระกร้า</p>
         {%else%}
         <div class="table-responsive cart_info">
             <table class="table table-condensed">

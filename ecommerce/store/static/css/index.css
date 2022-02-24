@@ -152,10 +152,10 @@
 }
 .text-store-bar h5{
     position: absolute;
-    width: 75px;
-    height: 36px;
+    width: 110px;
+    height: 44px;
     left: 1491px;
-    top: 91px;
+    top: 87px;
 
     font-size: 18px;
     line-height: 21px;
@@ -167,12 +167,12 @@
 } 
 .text-store-bar h6{
     position: absolute;
-    width: 110px;
+    width: 160px;
     height: 44px;
-    left: 1559px;
-    top: 76px;
+    left: 1630px;
+    top: 70px;
 
-    font-size: 18px;
+    font-size: 20px;
     line-height: 21px;
     display: flex;
     align-items: center;

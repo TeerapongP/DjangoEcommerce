@@ -162,12 +162,27 @@ html,body{
 
     color: #000000;
 }
+.text-store-bar h6{
+    position: absolute;
+    width: 160px;
+    height: 44px;
+    left: 1630px;
+    top: 70px;
+
+    font-size: 20px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
 .text-store-bar h7{
     position: absolute;
-    width: 75px;
-    height: 36px;
+    width: 110px;
+    height: 44px;
     left: 1491px;
-    top: 120px;
+    top: 115px;
 
     font-size: 18px;
     line-height: 21px;
@@ -177,20 +192,7 @@ html,body{
 
     color: #000000;
 } 
-.text-store-bar h6{
-    position: absolute;
-    width: 110px;
-    height: 44px;
-    left: 1559px;
-    top: 76px;
 
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #000000;
-}
 
 .showimge-product{
     position: absolute;
