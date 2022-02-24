@@ -33,7 +33,11 @@
             <a href="{% url 'contact' %}">
             <h6>CONTACT US</h6>
             </a>
-            <h7>WELLCOME TO DEMO</h7>
+            {% if request.user.is_authenticated and request.user.username %}
+            <h7>WELLCOME {{request.user.username}}</h7>
+            {% else %}
+            <h7>WELLCOME USER</h7>
+            {% endif %}
         </div>
     </div>
     <div class="cart-product">

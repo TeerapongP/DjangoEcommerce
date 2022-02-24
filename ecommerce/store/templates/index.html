@@ -48,6 +48,7 @@
         <div class="line-under-text"></div>
         <div class="border-radius">
             <h5></h5>
+           
             <div class="text-store-bar">
                 <a href="{% url 'index' %}">
                 <h1>>LUCKINTER<</h1>
@@ -59,11 +60,16 @@
                 <h3>SERIES</h3>
                 </a>
                 <h4>REWARDS</h4>
-                <h5>WELLCOME TO DEMO</h5>
+                {% if request.user.is_authenticated and request.user.username %}
+                <h5>WELLCOME {{request.user.username}}</h5>
+                {% else %}
+                <h5>WELLCOME USER</h5>
+                {% endif %}
                 <a href="{% url 'contact' %}">
                 <h6>CONTACT US</h6>
                 </a>
             </div>
+        
         </div>
         <div class="series-text">
             <a href="{% url 'series' %}">
