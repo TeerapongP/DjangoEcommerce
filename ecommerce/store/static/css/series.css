@@ -159,7 +159,7 @@
 }
 .text-store-bar h5{
     position: absolute;
-    width: 75px;
+    width: 200px;
     height: 36px;
     left: 1491px;
     top: 91px;
@@ -176,7 +176,7 @@
     position: absolute;
     width: 110px;
     height: 44px;
-    left: 1559px;
+    left: 1700px;
     top: 76px;
 
     font-size: 18px;
