@@ -1,9 +1,7 @@
 {% load static  %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Blue Period</title>
     <link rel="stylesheet" href="{% static 'css/product5.css'%}">
    
@@ -95,62 +93,62 @@
                         <button class="btn-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn2-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn3-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn4-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn5-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
 
                         <button class="btn-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn2-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn3-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn4-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn5-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                     </div>
@@ -166,9 +164,9 @@
             <h1>Blue Period</h1>
             <h2>สินค้าที่เกี่ยวข้อง</h2>
             <p1>เรื่องย่อ</p1>
-            <p2>
-                คะแนนสอบเป็นเลิศ มนุษยสัมพันธ์กับ ใครรอบข้างก็ไปได้ดี กินเหล้า สูบบุหรี่ <br>เที่ยวกลางคืนทำได้ทุกอย่าง เพื่อนๆ ต่างก็สนิทสนมเชื่อใจ <br>เขาเป็นเด็กผู้ชายในวัยม.ปลาย ที่ชีวิตดูกำลังไปได้สวยคนหนึ่ง <br>ทว่ามาวันหนึ่งเขากลับเพิ่งรู้ตัวว่า ตนเองนั้นชอบวาดภาพ!? <br>สุดยอดมังงะที่ตีแผ่เรื่องราว ของเหล่าคนที่มุ่งมั่นในการสอบ <br>เข้ามหา'ลัยศิลปะ เปี่ยมล้นไปด้วยพลังของช่วงชีวิตวัยรุ่น เปิดฉากขึ้นแล้ว!
-            </p2>
+            <p7>
+               {{product.description}}
+            </p7>
             <p3>ข้อมูลหนังสือ</p3>
             <p4>
                 เรื่อง : Tsubasa Yamaguchi <br>
@@ -193,14 +191,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -219,14 +217,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -245,14 +243,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -271,14 +269,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -297,14 +295,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>

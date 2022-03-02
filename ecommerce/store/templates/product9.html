@@ -1,9 +1,7 @@
 {% load static  %}
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>หนุ่มเย็บผ้ากับสาวนักคอสเพลย์</title>
     <link rel="stylesheet" href="{% static 'css/product9.css'%}">
    
@@ -99,73 +97,73 @@
                         <button class="btn-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn2-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn3-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn4-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn5-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn6-price-book">
                             <div class="text-btn">
                                 <p>หนังสือ</p>
-                                <p1>70</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn2-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn3-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn4-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn5-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                         <button class="btn6-price-ebook">
                             <div class="text-btn">
                                 <p>อีบุ๊ค</p>
-                                <p1>55</p1>
+                                <p1>{{product.price}}</p1>
                             </div>
                         </button>
                     </div>
@@ -176,9 +174,9 @@
             <h1>{{product.name}}</h1>
             <h2>สินค้าที่เกี่ยวข้อง</h2>
             <p1>เรื่องย่อ</p1>
-            <p2>
-                โกโจ วาคานะ หนุ่มมัธยมปลายที่ชื่นชอบตุ๊กตาฮินะเป็นชีวิตจิตใจและมีความฝัน<br>ที่อยากจะเป็นช่างทำตุ๊กตาแต่ด้วยเหตุการณ์บางอย่างในวัยเด็กทำให้เขานั้นมีปม<br>ในใจไม่กล้าเปิดเผยสิ่งที่ตัวเองชอบให้ใครรู้จนกระทั่งวันหนึ่งขณะที่เขากำลังทำชุด<br>ให้ตุ๊กตาอยู่ในห้องคหกรรมของโรงเรียนก็ถูก คิตากาวะ มาริน มาเห็นเข้าทำให้โกโจ<br>รู้สึกกลัวขึ้นมาว่าจะถูกรังเกียจ ที่ตัวเองนั้นชอบตุ๊กตา แต่ก็ผิดคาดเพราะทันใดนั้นเองมาริน <br>ก็ได้เข้ามาขอร้องให้โกโจ ช่วยทำชุดคอสเพลย์ให้กับเธอ ทำให้เขาทั้งสองมีโอกาสได้สนิทกัน
-            </p2>
+            <p7>
+                {{product.description}}
+            </p7>
             <p3>ข้อมูลหนังสือ</p3>
             <p4>
                 เรื่อง : Fukuda Shinichi
@@ -205,14 +203,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -231,14 +229,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -257,14 +255,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -283,14 +281,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -309,14 +307,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
@@ -335,14 +333,14 @@
                     <div class="border-price">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>70</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                     </a>
                     <div class="border-price2">
                         <div class="border-price-text">
                             <p>&#xE3F</p>
-                            <p1>55</p1>
+                            <p1>{{product.price}}</p1>
                         </div>
                     </div>
                 </div>
